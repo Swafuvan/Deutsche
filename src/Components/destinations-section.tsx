@@ -3,7 +3,7 @@ import { Icon } from "./Icons"
 
 const destinations = [
   {
-    image: "/images/destination-2.png" ,
+    image: "/images/destination-2.png",
     title: "Rome, Italy",
     price: "$5.42k",
     duration: "10 Days Trip",
@@ -24,18 +24,24 @@ const destinations = [
 
 export function DestinationsSection() {
   return (
-    <section className="py-12 md:py-24 lg:py-28">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-6">
-          <p className="text-slate-500 font-semibold font-poppins text-lg tracking-wide mb-4">Top Selling</p>
-          <h2 className="text-3xl font-bold tracking-tight font-volkhov sm:text-4xl md:text-5xl md:mb-16 text-slate-900">Top Destinations</h2>
+    <section className="relative py-20 bg-white overflow-hidden">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-14">
+          <p className="text-sm text-slate-500 font-semibold uppercase tracking-wide">Top Selling</p>
+          <h2 className="text-4xl font-volkhov font-bold text-slate-900 mt-2">Top Destinations</h2>
         </div>
 
-        <div className="grid gap-8  md:grid-cols-2 md:px-32 lg:grid-cols-3">
+        {/* Cards */}
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 md:px-32 relative z-10">
           {destinations.map((destination, index) => (
             <DestinationCard key={index} {...destination} />
           ))}
         </div>
+      </div>
+
+      {/* Decorative Spiral on Right */}
+      <div className="absolute top-85 right-0 lg:right-20 z-0 opacity-90">
+        <Icon name="Decore" />
       </div>
     </section>
   )

@@ -7,12 +7,12 @@ export function NewsletterSection() {
   return (
     <section className="w-full h-full overflow-hidden">
       {/* Background SVG using Icon system */}
-      <div className="w-full mt-2 relative p-24 ">
-        <div className="absolute bg-cover bg-center  bg-no-repeat inset-0 ">
+      <div className="w-full mt-2 relative p-35 z-10 ">
+        <div className="absolute bg-cover bg-center z-10  bg-no-repeat inset-0 ">
           <Icon name="Background" className="w-full h-full object-cover" />
         </div>
 
-        <div className="absolute z-50 -top-1 right-10">
+        <div className="absolute z-10 -top-1 right-10">
           <Icon name="PapperPlain" className="z-50" />
         </div>
 
@@ -41,6 +41,9 @@ export function NewsletterSection() {
               </Button>
             </div>
           </div>
+        </div>
+        <div className="absolute top-74 -right-2 -z-50">
+          <Icon name="Plus_Decore_2" />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import { Icon } from "./Icons";
 
 export function TestimonialsSection() {
   return (
-    <section className="relative py-20 md:py-28 bg-white">
+    <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-24">
         <div className="grid lg:grid-cols-2 ">
           {/* Left side - Text */}

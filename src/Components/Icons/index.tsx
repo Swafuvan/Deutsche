@@ -37,6 +37,7 @@ const Navigation = dynamic(()=>import('./navigation'))
 const SQ_Sketch = dynamic(()=>import('./square-sketch'))
 const Plus_Decore = dynamic(()=>import('./plus-decore'))
 const Decore = dynamic(()=>import('./decore-icon'))
+const Plus_Decore_2 = dynamic(()=>import('./plus-decore-2'))
 
 export type IconName =
    "Flight" |
@@ -71,7 +72,8 @@ export type IconName =
    "Navigation" |
    "SQ_Sketch" |
    "Plus_Decore" |
-   "Decore"
+   "Decore" |
+   "Plus_Decore_2"
    ; 
 
 const icons = {
@@ -107,7 +109,8 @@ const icons = {
   Navigation,
   SQ_Sketch,
   Decore,
-  Plus_Decore
+  Plus_Decore,
+  Plus_Decore_2
 };
 
 export const IconNameSet = new Set(Object.keys(icons));

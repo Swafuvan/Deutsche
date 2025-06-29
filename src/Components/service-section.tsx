@@ -31,7 +31,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section className="relative py-12 md:py-24 lg:py-32 ">
+    <section className="relative py-12 md:py-24 lg:py-32  overflow-hidden">
       <div className="absolute top-10 right-0 z-0">
         <Icon name="Plus_Decore" />
       </div>

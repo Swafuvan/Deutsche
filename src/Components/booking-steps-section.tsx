@@ -28,7 +28,7 @@ const steps = [
 
 export function BookingStepsSection() {
   return (
-    <section className="py-12 md:py-18 lg:py-20 bg-gray-50 relative z-10">
+    <section className="py-12 md:py-18 lg:py-20 overflow-hidden bg-white relative z-10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           {/* LEFT SIDE */}

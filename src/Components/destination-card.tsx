@@ -13,8 +13,8 @@ export function DestinationCard({ image, title, price, duration }: DestinationCa
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       <div className="relative">
         <Image
-          src={image || ''}
-          alt='destionation image'
+          src={image}
+          alt={title}
           width={400}
           height={300}
           className="w-full h-80 object-cover object-top"
