@@ -1,5 +1,5 @@
 import { SVGProps, Ref, forwardRef } from "react";
-const Arrow = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
+const SysytemIcon = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
   <svg
     width="77"
     height="66"
@@ -29,5 +29,5 @@ const Arrow = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
     />
   </svg>
 );
-const ForwardRef = forwardRef(Arrow);
+const ForwardRef = forwardRef(SysytemIcon);
 export default ForwardRef;

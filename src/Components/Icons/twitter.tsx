@@ -1,5 +1,5 @@
 import { SVGProps, Ref, forwardRef } from "react";
-const Arrow = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
+const Twitter = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
   <svg
     width="61"
     height="61"
@@ -57,5 +57,5 @@ const Arrow = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-const ForwardRef = forwardRef(Arrow);
+const ForwardRef = forwardRef(Twitter);
 export default ForwardRef;

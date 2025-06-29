@@ -1,5 +1,5 @@
 import { SVGProps, Ref, forwardRef } from "react";
-const Mike = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
+const EventIcon = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
   <svg
     width="67"
     height="75"
@@ -39,5 +39,5 @@ const Mike = (props: SVGProps<SVGSVGElement>, _ref: Ref<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-const ForwardRef = forwardRef(Mike);
+const ForwardRef = forwardRef(EventIcon);
 export default ForwardRef;
