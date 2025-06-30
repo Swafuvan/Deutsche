@@ -13,7 +13,7 @@ export function HeroSection() {
       </div>
 
       {/* === Right-side background decoration === */}
-      <div className="absolute top-0 right-0 w-[45%] h-[81%] z-0">
+      <div className="absolute top-0 right-0 w-[45%] h-[81%] sm:w-[60%] lg:w-[45%] sm:h-[60%] lg:h-[81%] z-0">
         <Image
           src="/images/Decore.png"
           alt="Background curve"
@@ -24,31 +24,31 @@ export function HeroSection() {
       </div>
 
       {/* === Main Content === */}
-      <div className="relative z-10 w-full pl-10 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-[auto_auto] items-center lg:gap-6">
+      <div className="relative z-10 w-full pl-10 mx-auto sm:px-6 lg:px-0 pt-24 sm:pt-28 lg:pt-0">
+        <div className="grid grid-cols-1 lg:grid-cols-[auto_auto] items-center lg:gap-6 gap-12 sm:gap-14">
           {/* === Left Side: Text === */}
-          <div className="flex flex-col w-full md:ml-10 justify-center space-y-6">
+          <div className="flex flex-col w-full md:ml-20 justify-center space-y-6 ">
             <div className="space-y-2 ">
-              <p className="text-orange-500 font-bold font-poppins text-lg uppercase">
+              <p className="text-orange-500 font-bold font-poppins text-lg uppercase sm:text-base md:text-lg ">
                 Best destinations around the world
               </p>
-              <h1 className="text-[#151a48] w-full font-volkhov font-bold tracking-tighter sm:text-4xl lg:text-[75px]">
+              <h1 className="text-[#151a48] w-full font-volkhov font-bold tracking-tighter sm:text-4xl lg:text-[75px] leading-tight">
                 Travel,{" "}
                 <span className="relative inline-block">
                   enjoy
-                  <span className="absolute -left-10 bottom-2 -z-10 rounded-full">
+                  <span className="absolute -left-10 sm:-left-6 bottom-2 -z-10 rounded-full">
                     <Icon name="Sketch" />
                   </span>
                 </span>{" "}
                 and live a new and full life
               </h1>
-              <p className="text-[#5E6282] max-w-lg font-poppins text-md leading-relaxed font-medium">
+              <p className="text-[#5E6282] max-w-lg font-poppins text-md leading-relaxed sm:text-base font-medium">
                 Built Wicket longer admire do barton vanity itself do in it.
                 Preferred to sportsmen it engrossed listening. Park gate sell
                 they west hard for the.
               </p>
             </div>
-            <div className="flex gap-6 mt-6 items-center">
+            <div className="flex gap-6 mt-6 items-center flex-col sm:flex-row justify-center lg:justify-start sm:gap-6">
               <Button className="bg-yellow-500 hover:bg-yellow-600 text-white text-lg px-6 py-6 rounded-xl shadow-md">
                 Find out more
               </Button>
@@ -62,7 +62,7 @@ export function HeroSection() {
           </div>
 
           {/* === Right Side: Image === */}
-          <div className="relative flex md:mt-20 justify-center lg:justify-end">
+          <div className="relative flex md:mt-20 justify-center sm:mt-0">
             <Icon name="Main_image" />
           </div>
         </div>
